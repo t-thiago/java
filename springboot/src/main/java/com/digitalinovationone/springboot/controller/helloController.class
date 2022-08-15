@@ -1,0 +1,14 @@
+package com.digitalinovationone.springboot.controller;
+
+import org.springframework.binding.anotation.getMapping;
+import org.springframework.binding.anotation.RestController;
+
+@RestController
+public class HelloController {
+
+
+    @getMapping("/")
+    public String helloMessage() {
+        return "Hello, DIO"
+    }
+}
